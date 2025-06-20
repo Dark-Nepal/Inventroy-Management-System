@@ -1,0 +1,28 @@
+
+{% extends "admin/base_site.html" %}
+{% load static %}
+{% block content %}
+<div class="container text-center">
+    <h1 class="text-center">Welcome to the Inventory Dashboard</h1>
+    <p class="text-center">Here you can manage your inventory and view statistics.</p>
+
+<div  class="d-flex justify-content-center" style="display: flex ; gap: 20px; flex-wrap: wrap;">
+    <div style="background:#391cb9;padding:20px;border-radius:8px;width:250px;">
+        <h2 style="color: white;">Total Products</h2>
+        <p>{{ site_stats.quantity }}</p>
+    </div>
+    <div style="background:#49e02b;padding:20px;border-radius:8px;width:250px;">
+        <h2 style="color: white;">Total Sales</h2>
+        <p>{{ site_stats.total_sales }}</p>
+    </div>
+    <div style="background:#e71212;padding:20px;border-radius:8px;width:250px;">
+        <h2 style="color: white;">Low Stock</h2>
+        <p>{{ site_stats.low_stock }}</p>
+    </div>
+</div>
+
+<div class="container">
+    
+    <img src="{% static 'images/inventory.png' %}" class="img-fluid " style=" margin-left:40px; width:fit-content; height: 30rem;;" />
+</div>
+{% endblock %}
