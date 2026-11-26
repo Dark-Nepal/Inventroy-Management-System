@@ -62,12 +62,16 @@ Usage
 Project Structure
 The exact directory structure may vary depending on the repository's implementation. Typical Django project files include:
 project-root/
+
+
 ├── manage.py
 ├── requirements.txt
 ├── project_config/
 ├── app_name/
 ├── templates/
 └── static/
+
+
 Contributing
 Contributions, suggestions, and bug reports are welcome.
 1. Fork the repository.
@@ -77,6 +81,8 @@ Contributions, suggestions, and bug reports are welcome.
 5. Open a pull request.
 License
 No license has been specified yet. Add a LICENSE file before granting reuse permissions.
+
+
 Author
 Dark Nepal
 - GitHub: Dark-Nepal
